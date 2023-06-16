@@ -1,0 +1,24 @@
+[
+    {
+        "category" : "kids"
+    },
+    {
+        "category": "fantasy"
+    },
+    {
+        "category": "fiction"
+    },
+    {
+        "category": "romance"
+    },
+    {
+        "category": "thriller"
+    },
+    {
+        "category": "mystery"
+    },
+    {
+        "category": "horror"
+    }
+
+]

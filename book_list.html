@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <title>Books List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-image: linear-gradient(to right, #667eea, #764ba2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header py-8">
+        <h1 class="text-3xl text-white text-center">Books List</h1>
+        <div id="dropDownContainer">
+            <button id="dropdownList" data-dropdown-toggle="dropdownBgHover" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown checkbox <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+            <!-- Dropdown menu -->
+            <form id="dropDownMenu" class=" z-10 w-48 bg-white rounded-lg shadow dark:bg-gray-700" method="get">
+               
+    </form>
+        </div>
+    </div>
+
+    <div class="container mx-auto sm:px-6 lg:px-8">
+        <!-- Content goes here -->
+    </div>
+
+    <div class="bg-white">
+        <div class="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
+            <!-- <h2 class="sr-only">Products</h2> -->
+
+            <div id="books_container" class="m-16 -mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4 m-4">
+                 
+            </div>
+        </div>
+    </div>
+    <script src ='book_list.js'></script>
+
+</body>
+
+</html>
