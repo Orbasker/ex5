@@ -112,7 +112,7 @@ function fetchUpdatedContent(url, query = "SELECT * FROM tbl_22_books;") {
         titleElement.className = "text-sm font-medium text-gray-900 ";
 
         const anchorElement = document.createElement("a");
-        anchorElement.href = "/book_details.html?book_id=" + book.book_id;
+        anchorElement.href = "/students/2022-2023/web1/dev_22/exercises/ex5/book_details.html?book_id="+ book.book_id;
 
         const titleSpanElement = document.createElement("span");
         titleSpanElement.setAttribute("aria-hidden", "true");

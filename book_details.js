@@ -2,13 +2,15 @@ let url_params = new URLSearchParams(window.location.search);
 let book_id = url_params.get("book_id");
 let images = [];
 
-fetch(`/books_list.php?book_id=${book_id}`)
+fetch(`/students/2022-2023/web1/dev_22/exercises/ex5/books_list.php?book_id=${book_id}`)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     data.forEach(function (book) {
-      fetch(`/book_details.php?book_id=${book.book_id}`)
+      fetch(`/students/2022-2023/web1/dev_22/exercises/ex5/book_details.php?book_id=${book.book_id}`)
         .then((response) => response.json())
         .then((data) => {
+          console.log(data);
           data.forEach(function (book_picture_path) {
             images.push(book_picture_path.picture_path);
           });
