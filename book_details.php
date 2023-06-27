@@ -17,5 +17,3 @@
     
     echo $result;
         header('Content-Type: application/json');
-
-?>

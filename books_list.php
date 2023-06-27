@@ -9,7 +9,6 @@
         $result = execute_query($select_book_query);
         echo $result;
         header('Content-Type: application/json');
-        // render_screen($result);
     }
     else
     {
@@ -18,7 +17,6 @@
                 if (!$result) {
                     die("Query Failed" . mysqli_error($connection));
                 }
-                // render_screen($result);
                 echo $result;
                 header('Content-Type: application/json');
 
@@ -31,7 +29,6 @@
                 $result = execute_query($select_all_books_query);
                 echo $result;
                 header('Content-Type: application/json');
-                // render_screen($result);
             }
     }
             
